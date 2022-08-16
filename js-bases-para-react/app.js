@@ -70,3 +70,29 @@ boton.addEventListener("click", function () {
     cont++;
   }
 });
+
+// DESTRUCTURING
+const usuario = {
+  name: "Mateo",
+  apellido: "Reppeto",
+};
+
+function printName(usuario) {
+  const { name, apellido } = usuario;
+
+  return `nombre completo : ${name.toUpperCase()} ${apellido.toUpperCase()}`;
+}
+
+console.log(printName(usuario));
+
+//FUNCIONES ANÓNIMAS EN JAVASCRIPT
+console.log(
+  (function msg() {
+    return "Holaaa";
+  })()
+);
+
+
+//ARROW FUNCTIONS
+const texto = () => 'Hola'
+const numero = () => 

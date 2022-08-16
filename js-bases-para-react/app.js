@@ -38,3 +38,35 @@ const newProduct = {
 console.log(newProduct);
 
 // Manejo del DOM -> manejarlo bastante bien es importante
+const text = "consolidando bases de javascript";
+const description = document.createElement("p");
+
+description.innerHTML = text;
+document.body.append(description);
+
+const boton = document.createElement("button");
+boton.innerText = "Ver";
+document.body.append(boton);
+
+console.log(description);
+console.log(boton);
+
+// Manejar los evento en javascript EVENT HANDLER
+let cont = 0;
+boton.addEventListener("click", function () {
+  let arr = [
+    "Programación orientada a objetos",
+    "Herencias",
+    "Destructuring -> variables desde objetos(valores)",
+    "ENHACEMENT -> (opuesto al de arriba)",
+  ];
+  description.innerText = "Visualizando temas trabajados..";
+  if (cont < 1) {
+    for (let i = 0; i < arr.length; i++) {
+      let el = document.createElement("li");
+      el.innerText = arr[i];
+      document.body.append(el);
+    }
+    cont++;
+  }
+});

@@ -92,7 +92,18 @@ console.log(
   })()
 );
 
-
 //ARROW FUNCTIONS
-const texto = () => 'Hola'
-const numero = () => 
+const texto = () => "Hola";
+// const numero = () =>
+
+// SPREAD OPERATOR  Y REST OPERATOR
+
+// spread -> cargar valores anteriores y agregar.
+
+const newArray = [...oldArray, 1, , 2];
+
+// rest -> obtener valores ilimitados de datos en un array
+
+function sortArgs(...args) {
+  return args.sort();
+}

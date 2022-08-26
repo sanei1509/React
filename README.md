@@ -24,3 +24,13 @@ es una librería que facilita el `desarrollo de interfaces` en este lenguaje asi
 - Vite
 - Next JS
 - Remix Run
+
+# Estilo en React para nuestras aplicaciones
+
+| existen varias formas y librerías para esto:
+
+- bootstrap orientado a componentes para react
+- styled component (librería)
+- CSS simple, en línea o por archivos css.
+- Tailwind CSS. (es la que se esta usando en el proyecto vite):
+  es un `framework` muy bueno de css.

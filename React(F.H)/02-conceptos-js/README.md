@@ -4,7 +4,7 @@
 
 ## Listado de conceptos:
 
-- Variables y constantes
+- Variables y constantes : no usar var, solo const y let (manejando scope)
 - `Template String`
 - `Objetos literales`
 - `Arreglos (listas)`
@@ -17,3 +17,7 @@
 - Fetch API
 - Async - Await
 - Ternarios
+
+## Datos interesantes
+
+el formato JSON es igual al código para crear objetos en javascript por esto un programa en JS puede convertir fácilmente datos de JSON a objetos literales de javascript.

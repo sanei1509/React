@@ -18,6 +18,16 @@
 - Async - Await
 - Ternarios
 
-## Datos interesantes
+# Datos interesantes
 
 el formato JSON es igual al código para crear objetos en javascript por esto un programa en JS puede convertir fácilmente datos de JSON a objetos literales de javascript.
+
+## Spread operator vs Rest operator
+
+se usa para ambos operadores la misma sintaxis = (...)
+
+la principal diferencia es que `REST` extiende los valores especificos que se le pasaron dentro de un array:
+
+ej: toma el resto de operadores que se le esten pasando a una función por ejemplo.
+
+y el operador `SPREAD`

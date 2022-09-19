@@ -18,3 +18,5 @@ Un producto de software debidamente probado, garantiza calidad, seguridad, confi
 ## veamos la siguiente imágen sacada del siguiente recurso citado:
 
 blog -> https://profile.es/blog/que-es-el-testing-de-software/#:~:text=El%20testing%20de%20software%20o,software%20est%C3%A9%20libre%20de%20defectos.
+
+<img src="https://user-images.githubusercontent.com/69850751/191022134-5a917f7b-71f6-4205-b4dd-81519175aeda.png"/>

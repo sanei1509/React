@@ -6,10 +6,10 @@ Introducción a las pruebas
 
 ## `AAA` :
 
-- `Arrange - Arreglar` -> estado inicial de las pruebas:
+- `Arrange - Arreglar` -> **estado inicial de las pruebas:**
   inicializar variables, archivos a importar, etc
-- Act - Actuar ->
-- Assert - Afirmar
+- `Act - Actuar` ->
+- `Assert - Afirmar` ->
 
 * Primeras pruebas
 

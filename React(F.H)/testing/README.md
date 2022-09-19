@@ -1,5 +1,7 @@
 # Pruebas unitarias
 
+| las pruebas no son parte del `bundle` de nuestra app, corren el local.
+
 ¿Que se toca en esta sección del curso?
 
 Introducción a las pruebas
@@ -7,9 +9,11 @@ Introducción a las pruebas
 ## `AAA` :
 
 - `Arrange - Arreglar` -> **estado inicial de las pruebas:**
-  inicializar variables, archivos a importar, etc
-- `Act - Actuar` ->
-- `Assert - Afirmar` ->
+  inicializar variables, archivos a importar, etc.
+
+- `Act - Actuar` -> llamar métodos, simular clicks, realizar acciones sobre lo anterior.
+
+- `Assert - Afirmar` -> Observar el comportamiento resultante de lo anterior.
 
 * Primeras pruebas
 

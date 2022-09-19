@@ -1,5 +1,7 @@
 # Pruebas unitarias
 
+`objetivo` => ser capaz de realizar pruebas a cualquier aplicación react.
+
 | las pruebas no son parte del `bundle` de nuestra app, corren el local.
 
 ¿Que se toca en esta sección del curso?

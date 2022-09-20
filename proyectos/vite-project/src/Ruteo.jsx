@@ -1,13 +1,6 @@
 import { useState } from "react";
-import "./index.css";
-// import { Route, Routes } from "react-router-dom";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-// importo los componentes que voy a utilizar
-// import Header from "./componentes/Header";
-// import Formulario from "./componentes/Formulario";
-// import ListadoPacientes from "./componentes/ListadoPacientes";
 
 //importaciones del ruteo
 import Home from "./vistas/Home";

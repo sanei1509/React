@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 
-import { BrowserRouter as Router } from "react-router-dom";
+// importo mi aplicación para renderizar
+import App from "./MeApp";
+import "./global.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <Router>
+// obtenemos el elementos que le vamos a pasar a create root para renderizar
+const app = document.getElementById("root");
+ReactDOM.createRoot(app).render(
+  <React.StrictMode>
     <App />
-  </Router>
+  </React.StrictMode>
 );

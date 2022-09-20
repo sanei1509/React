@@ -16,6 +16,8 @@ suponiendo que la app fue iniciada por `create react app` las librerías de test
 
 creamos el archivo de test como se ve abajo:
 
+- nos encargamos de que todo el contenido que esperamos efectivamente este presente en el DOM.
+
 ```javascript
 describe("ProductPage", () => {
   it("Debe mostrar un titulo/encabezado", () => {

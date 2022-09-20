@@ -28,3 +28,9 @@ describe("ProductPage", () => {
   });
 });
 ```
+
+Otro método para la inicialización de nuestra prueba (para no hacerlo en cada una de las pruebas)
+
+```javascript
+beforeEach(() => render(<ProductPage />));
+```

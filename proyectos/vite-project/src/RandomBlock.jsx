@@ -35,4 +35,11 @@ export default function RandomBlock(props) {
 }
 
 // Fijamos los tipos de data que vamos a recibir por props
-RandomBlock.propTypes = {};
+RandomBlock.propTypes = {
+  fraseCitada: PropTypes.string,
+};
+
+// establecemos valor por defecto de nuestras props
+RandomBlock.defaultProps = {
+  fraseCitada: "No tiene frase celébre",
+};

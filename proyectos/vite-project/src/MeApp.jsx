@@ -8,7 +8,7 @@ const App = ({ msg = "hola no llego nada !!" }) => {
       {/* <h1>Hola, desde mi MeApp.jsx</h1> */}
 
       {/* <h2>Además</h2> */}
-      <RandomBlock fraseCitada="Siempre que llovio paro" />
+      <RandomBlock />
     </div>
   );
 };

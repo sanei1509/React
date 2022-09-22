@@ -1,40 +1,33 @@
+// TIPOS DE FUNCIONES EN ES6
 
-// Funciones en JS
-// const saludar = function( nombre ) {
-//     return `Hola, ${ nombre }`;
-// }
+const saludar = (nombre) => {
+  return `Hola, ${nombre}`;
+};
 
-const saludar2 = ( nombre ) => {
-    return `Hola, ${ nombre }`;
-}
-
-const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
-const saludar4 = () => `Hola Mundo`;
+export const saludar3 = (nombre) => `Hola ${nombre}`;
+export const saludar4 = () => `Hola Mundo`;
 
 // console.log( saludar('Goku') )
 
-console.log( saludar2('Vegeta') );
-console.log( saludar3('Goku') );
-console.log( saludar4() );
+// console.log(saludar("NARUTO"));
+// console.log(saludar3("UZUMAKI"));
+// console.log(saludar4());
 
-
-const getUser = () => ({
-        uid: 'ABC123',
-        username: 'El_Papi1502'
+// FUNCIÓN
+export const getUser = () => ({
+  uid: "ABC123",
+  username: "Nachito tricolor",
 });
 
-
-const user = getUser();
-console.log(user);
+//EJECUCION EN PRUEBAS ACA NO
+// const user = getUser();
+// console.log(user);
 
 // Tarea
-const getUsuarioActivo = ( nombre ) =>({
-    uid: 'ABC567',
-    username: nombre
-})
+export const obtenerUsuario = (nombre) => ({
+  uid: "ABC567",
+  username: nombre,
+});
 
-const usuarioActivo = getUsuarioActivo('Fernando');
-console.log( usuarioActivo );
-
-
-
+// const usuarioActivo = getUsuarioActivo("Mateo");
+// console.log(usuarioActivo);

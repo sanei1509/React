@@ -24,3 +24,9 @@ en este proyecto vamos a aprovechar para ver la introducción en las pruebas.
 ## porque en el proyecto creado en vite ?
 
 porque vite es más manual y debemos hacer las instalaciones por nosotros mismos lo que nos hara más concientes de lo que en realidad estamos haciendo.
+
+## Estructura de archivos
+
+la `/tests` va a ser un espejo de `src`.
+
+teniendo esto claro no hay como perderse si queremos ver los tests de algo en especifico va a ser muy fácil encontrarlo.

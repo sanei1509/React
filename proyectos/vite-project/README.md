@@ -21,3 +21,22 @@ que por detras es un script que ejecuta lo siguiente:
 
 	jest --watchAll
 ```
+
+### Instalar babel y configurarlo
+
+instalación pedida en la documentación de `jest`
+
+comando ->
+
+```
+
+```
+
+nombre del archivo -> `babel.config.cjs`
+
+contenido del archivo -> `
+
+```module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+```

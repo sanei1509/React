@@ -16,3 +16,11 @@ Las principales diferencias son las siguientes:
 ## Analicemos la estructura de ambos proyectos:
 
 ...
+
+# Testing
+
+en este proyecto vamos a aprovechar para ver la introducción en las pruebas.
+
+## porque en el proyecto creado en vite ?
+
+porque vite es más manual y debemos hacer las instalaciones por nosotros mismos lo que nos hara más concientes de lo que en realidad estamos haciendo.

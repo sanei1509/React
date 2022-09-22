@@ -55,3 +55,15 @@ podemos verlo como un `componente` en react.
     4. Principalmente unitarias (en la prueba de integración solo deberíamso tester todo como un componente solo).
 
 # Requerimientos que deberíamos seguir
+
+# Instalación de jest y herramientas
+
+```bash
+npm install jest --save
+```
+
+`Instalamos los tipos de jest`
+
+```bash
+npm install @types/jest
+```

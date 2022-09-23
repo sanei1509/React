@@ -3,6 +3,7 @@ const personajes = ["Naruto", "Sasuke", "Sakura"];
 const [, , personaje_terciario] = personajes;
 console.log(personaje_terciario);
 
+// RETORNO UN ARRAY
 export const random_array = () => {
   return ["ABC", 123];
 };

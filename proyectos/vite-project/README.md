@@ -40,3 +40,29 @@ contenido del archivo -> `
   presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
 };
 ```
+
+## Listado de diferentes tipos de pruebas que aprendi a realizar:
+
+1. `Comparar valor esperado con el retorno devuelto`
+
+```javascript
+expect() toBe ()
+```
+
+2. `Controlar tipo de las variables`
+
+```javascript
+expect(typeof var_cualquiera).toBe("number");
+```
+
+2. `Esperar cualquier retorno pero de un tipo específico`
+
+```javascript
+expect(var_cualquiera).toEqual(expect.any(String));
+```
+
+3.
+
+```
+
+```

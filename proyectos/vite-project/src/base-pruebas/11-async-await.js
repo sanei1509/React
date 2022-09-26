@@ -1,8 +1,7 @@
 // const getImagenPromesa = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
 // getImagenPromesa().then( console.log );
-import fetch from "node-fetch";
 
-const getImagen = async () => {
+export const getImagen = async () => {
   try {
     const apiKey = "4uBgjzYouKN5LxDJ1sFuzcfzQ8aVHDrE";
     const resp = await fetch(

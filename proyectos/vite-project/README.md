@@ -63,6 +63,8 @@ expect(var_cualquiera).toEqual(expect.any(String));
 
 3.
 
-```
+## Prubas sobre el DOM
 
-```
+jest tiene muchos métodos que nos permite testear el dom de nuestra app de muchas maneras.
+
+`container` tiene muchos métodos que podemos ir analizando y testeando.

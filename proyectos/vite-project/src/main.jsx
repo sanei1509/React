@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // importo mi aplicación para renderizar
-import App from "./MeApp";
+import MeApp from "./MeApp";
 import "./global.css";
 import CounterApp from "./CounterApp";
 
@@ -10,7 +10,7 @@ import CounterApp from "./CounterApp";
 const app = document.getElementById("root");
 ReactDOM.createRoot(app).render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     <CounterApp valor={0} />
   </React.StrictMode>
 );

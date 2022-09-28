@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas sobre componente principal REACT MeApp.js test DOM 1`] = `
+<div>
+  <div>
+    <div
+      class="container"
+    >
+      <h1>
+        Welcome 
+        Natalia Oreiro
+        !!
+      </h1>
+      <h3>
+        información sobre nuevo usuario:
+      </h3>
+      <div
+        class="json-container"
+      >
+        <code>
+          {"name":"Natalia","surname":"Oreiro","location":"Argrentina","born_country":"Uruguay","age":40}
+        </code>
+      </div>
+      <h2>
+        Frase Célebre
+      </h2>
+      <p>
+        "
+        No tiene frase celébre
+        "
+      </p>
+    </div>
+  </div>
+</div>
+`;

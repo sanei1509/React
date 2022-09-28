@@ -50,3 +50,7 @@ que una parte funcione bien por si sola
 ## "Escribe pruebas, no muchas. la mayoría de las veces de integración"
 
 |Ceo de vercel y creador de socket.io
+
+# Renderizado de componentes
+
+Esto lo cubre `react testing library` con el método `render`

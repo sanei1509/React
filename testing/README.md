@@ -45,7 +45,7 @@ que una parte funcione bien por si sola
 
 ### `React testing library`
 
-### ``Cypress`
+### `Cypress`
 
 ## "Escribe pruebas, no muchas. la mayoría de las veces de integración"
 

@@ -24,3 +24,29 @@ blog -> https://profile.es/blog/que-es-el-testing-de-software/#:~:text=El%20test
 Dentro de las pruebas funcionales se encuentra una de las más utilizadas :
 
 `pruebas unitarias`: forma de probar una unidad o fragmento de código
+
+# Tipos de prueba utilizadas
+
+## End to end
+
+se comporta igual que un usuario, da clicks e incluso llena formularios
+
+## Integración
+
+Revisar que varias partes de la aplicación funcionen bien juntas
+
+## Unitarias
+
+que una parte funcione bien por si sola
+
+# Herramientas recomendadas para el testing en REACT
+
+### `Jest`
+
+### `React testing library`
+
+### ``Cypress`
+
+## "Escribe pruebas, no muchas. la mayoría de las veces de integración"
+
+|Ceo de vercel y creador de socket.io

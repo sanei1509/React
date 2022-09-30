@@ -14,10 +14,23 @@ export const AppContainer = () => {
     // setTemas([...temas, "Te Quiero!"]);
   };
 
+  // función añadir nuevos temas
+  const onNewTopic = (tema) => {
+    const temasToCompare = temas.map((tema) => {
+      return tema.toLowerCase();
+    });
+    if (temasToCompare.includes(tema)) {
+      alert("Ya has buscado este tema antes");
+      return;
+    } // si el tema ya existe no lo añadimos
+
+    setTemas([tema, ...temas]);
+  };
+
   return (
     <div className="max-w-4xl m-auto content-center text-center mt-4">
       <h1 className="text-3xl font-mono">Busca tus gifs favoritos aqui !</h1>
-      <AddTopic setTemas={setTemas} añadidos={temas} />
+      <AddTopic onNewTopic={onNewTopic} />
       {/* INPUT DE BUSQUEDA */}
 
       {/* LISTAMOS TODOS LOS GIF CORRESPONDIENTES A LA BUSQUEDA */}
@@ -30,10 +43,16 @@ export const AppContainer = () => {
         Añadir
       </button>
       {/* LISTADO */}
-      <ol className="mt-10">
-        {temas.map((tema) => {
+      <ol className="flex-row mt-10 justify-start">
+        {temas.map((tema, i) => {
           return (
-            <li className="font-extra-bold font-medium text-xl">{tema}</li>
+            <li
+              key={tema}
+              className="content-center font-extra-bold font-medium text-xl"
+            >
+              {Number(temas.indexOf(tema) + 1) + "." + " "}
+              {tema}
+            </li>
           );
         })}
       </ol>

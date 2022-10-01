@@ -7,11 +7,10 @@ nav {
   flex-direction: column;
   width: max-content;
   padding: 4rem 1.1rem;
-  /* background-color: rgba(225, 225, 225, 0.02); */
+  /* background-color: rgba(225, 225, 225, 0.01); */
   position: fixed;
-  left: 50%;
-  transform: translate(-650%, -20%);
-  bottom: 2rem;
+  left: 5%;
+  bottom: 20%;
   gap: 1rem;
   justify-content: space-between;
   border-radius: 200px;
@@ -25,7 +24,7 @@ nav a {
   border-radius: 200px;
   display: flex;
   color: rgba(255, 255, 255, 0.699);
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
 nav a:hover {

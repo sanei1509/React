@@ -9,7 +9,7 @@ import { AiOutlineHome } from "react-icons/ai";
 const NavBar = () => {
   return (
     <nav>
-      <a href="#render-home-page" className="">
+      <a href="#render-home-page">
         <AiOutlineHome />
       </a>
       <a href="#render-favorite-page">

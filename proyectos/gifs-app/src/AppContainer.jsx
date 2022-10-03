@@ -4,6 +4,7 @@ import { useState } from "react";
 // componentes personalizados
 import { AddTopic } from "./components/AddTopic";
 import "./style.css";
+import ListadoGifs from "./components/ListadoGifs";
 
 export const AppContainer = () => {
   // incializamos las categorías con un hook para poder modificar
@@ -43,19 +44,10 @@ export const AppContainer = () => {
         Añadir
       </button>
       {/* LISTADO */}
-      <ol className="flex-row mt-10 justify-start">
-        {temas.map((tema, i) => {
-          return (
-            <li
-              key={tema}
-              className="content-center font-extra-bold font-medium text-xl"
-            >
-              {Number(temas.indexOf(tema) + 1) + "." + " "}
-              {tema}
-            </li>
-          );
-        })}
-      </ol>
+
+      {temas.map((tema) => {
+        return <ListadoGifs key={tema} tema={tema} />;
+      })}
     </div>
   );
 };

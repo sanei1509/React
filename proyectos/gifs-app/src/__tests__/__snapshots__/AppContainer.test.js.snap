@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testeo del componente contenedor de la aplicación Debe renderizar el componente 1`] = `
+<div
+  className="max-w-4xl m-auto content-center text-center mt-4"
+>
+  <h1
+    className="text-3xl font-mono"
+  >
+    Busca tus gifs favoritos aqui !
+  </h1>
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 mt-5 rounded-lg text-sm focus:outline-none"
+        onChange={[Function]}
+        placeholder="Busca tus gifs por temas"
+        type="text"
+        value=""
+      />
+    </form>
+  </div>
+  <button
+    aria-expanded="false"
+    className="inline-flex items-center justify-center rounded-md bg-slate-800 mt-2 pr-10 pl-10 pb-2 pt-2 text-gray-100 hover:bg-black hover:text-whit focus:outline-none"
+    onClick={[Function]}
+  >
+    Añadir
+  </button>
+  <ol
+    className="flex-row mt-10 justify-start"
+  >
+    <li
+      className="content-center font-extra-bold font-medium text-xl"
+    >
+      1. 
+      Familia
+    </li>
+    <li
+      className="content-center font-extra-bold font-medium text-xl"
+    >
+      2. 
+      Amigos
+    </li>
+    <li
+      className="content-center font-extra-bold font-medium text-xl"
+    >
+      3. 
+      Descontrol!
+    </li>
+  </ol>
+</div>
+`;

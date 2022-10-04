@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // componentes personalizados
-import { AddTopic } from "./components/AddTopic";
+import { AddTopic } from "./components/BuscarTema";
 import "./style.css";
 import ListadoGifs from "./components/ListadoGifs";
 

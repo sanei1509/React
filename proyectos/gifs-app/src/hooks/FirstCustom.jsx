@@ -5,7 +5,7 @@ export const FirstCustom = (tema) => {
 
   const getImages = async () => {
     const images = await fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=J9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9&q=${tema}&limit=10&offset=0&rating=g&lang=en`
+      `api.giphy.com/v1/gifs/search?api_key=QWOqCNOlk5FuPBQPQNXJwwgMIijFgDCo&q=Rick and Morty&limit=5`
     );
   };
 

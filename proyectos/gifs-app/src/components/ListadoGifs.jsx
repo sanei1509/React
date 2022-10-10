@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { gifExtract } from "../helpers/ObtenerGifs";
 import { FirstCustom } from "../hooks/FirstCustom";
+import { GifItem } from "./GifItem";
 
 const ListadoGifs = ({ key, tema }) => {
   // custom hook
@@ -21,18 +22,11 @@ const ListadoGifs = ({ key, tema }) => {
 
   return (
     <>
-      <h3 className="text-3xl font-bold">{tema}</h3>
-      {/* <img src={gifExtract(tema)["img"]} /> */}
+      <h3 className="text-4xl font-bold mb-3">{tema}</h3>
       {images.map((gif) => (
-        <ol>
-          <li key={gif.id}>
-            <img src={gif.img} />
-          </li>
-        </ol>
-
-        // TODO estilar esto en un componente aparte
+        <GifItem title={gif.title} img={gif.img} id={gif.id} />
       ))}
-      ;
+      {/* Paso por props, lo necesario */};
     </>
   );
 };

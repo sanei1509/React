@@ -36,13 +36,13 @@ export const AppContainer = () => {
 
       {/* LISTAMOS TODOS LOS GIF CORRESPONDIENTES A LA BUSQUEDA */}
 
-      <button
+      {/* <button
         className="inline-flex items-center justify-center rounded-md bg-slate-800 mt-2 pr-10 pl-10 pb-2 pt-2 text-gray-100 hover:bg-black hover:text-whit focus:outline-none"
         aria-expanded="false"
         onClick={handlerTopic}
       >
         Añadir
-      </button>
+      </button> */}
       {/* LISTADO */}
 
       {temas.map((tema) => {

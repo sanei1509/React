@@ -1,24 +1,23 @@
 // Si FUNCIONA ACA LA PODEMOS TENER EN CUALQUIER LUGAR APARTE
 import { useEffect, useState } from "react";
 import { gifExtract } from "../helpers/ObtenerGifs";
-import { FirstCustom } from "../hooks/FirstCustom";
+import { useFirstHook } from "../hooks/useFirstHook";
 import { GifItem } from "./GifItem";
 
 const ListadoGifs = ({ key, tema }) => {
   // custom hook
-  const [images, setImages] = useState([]);
+  const [images, loader] = useFirstHook(tema);
 
-  const getImages = async () => {
-    const newImages = await gifExtract(tema);
-    console.log(newImages);
-    setImages(newImages);
-  };
+  // const getImages = async () => {
+  //   const newImages = await gifExtract(tema);
+  //   console.log(newImages);
+  //   setImages([]);
+  //   setLoader(false);
+  // };
 
-  useEffect(() => {
-    getImages();
-  }, []);
-
-  console.log(images);
+  // useEffect(() => {
+  //   getImages();
+  // }, []);
 
   return (
     <>

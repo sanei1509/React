@@ -1,6 +1,7 @@
 // import ContadorCustomHook from "./components/ContadorCustomHook";
 import "./useReducer/introReducer";
 import TodoApp from "./useReducer/TodoApp";
+import SimpleForm from "./components/SimpleForm";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <Contador /> */}
       {/* <ContadorCustomHook /> */}
       {/* introReducer(); */}
-      <TodoApp />
+      <SimpleForm />
+      {/* <TodoApp /> */}
     </div>
   );
 }

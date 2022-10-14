@@ -2,6 +2,7 @@
 import "./useReducer/introReducer";
 import TodoApp from "./useReducer/TodoApp";
 import SimpleForm from "./components/SimpleForm";
+import BreakingBad from "./components/BreakingBad";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       {/* <Contador /> */}
       {/* <ContadorCustomHook /> */}
       {/* introReducer(); */}
-      <SimpleForm />
+      {/* <SimpleForm /> */}
       {/* <TodoApp /> */}
+      <BreakingBad />
     </div>
   );
 }

@@ -5,14 +5,13 @@ export const useForm = (initialForm) => {
   // Con objetos obtenemos facilidad a la posibilidad de expandirlo
   const [stateForm, setStateForm] = useState({
     username: "",
-    email: "",
     password: "",
   });
 
   console.log(stateForm);
   // ¿ Como puedo yo usar mis valores del form?
   // DESTRUCTURACIÓN..
-  const { username, email, password } = stateForm;
+  const { username, password } = stateForm;
 
   const controladorForm = ({ target }) => {
     const { name, value } = target;

@@ -1,21 +1,31 @@
+import useReducer from "react";
+
 console.log("PROBANDO PROBANDO REDUCERS !!");
 
 const valorInicial = [
   {
-    id: 1,
-    nome: "Vale",
-    nota: 8,
+    id: new Date().getTime(),
+    description: "Ir formal a la entrevista",
+    hora: "8:00 am",
   },
+  {
+    id: new Date().getTime() * 4,
+    description: "Buen día",
+    hora: "7:00 am",
+  }
 ];
 
-const todoReducer = (state = valorInicial, action) => {
-  return state;
-};
+const TodoReducer = () => {
+  // Dispatch de actiones sobre el store, sobre nuestros almacenamientos
+  const [state, dispatch] = useReducer(reducer??, initialState);
 
-const newTodo = {
-  id: 2,
-  name: "Mateo",
-  nota: 8,
+  return <h1>REDUCERS</h1>;
 };
+// const TodoReducer = (state = valorInicial, action) => {
+//   return state;
+// };
 
-export default todoReducer;
+//
+// };
+
+export default TodoReducer;

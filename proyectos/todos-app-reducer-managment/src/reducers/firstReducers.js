@@ -1,19 +1,19 @@
 const initialState = [
   {
     id: 1,
-    name: "facu",
+    name: "Naruto",
   },
   {
     id: 2,
-    name: "Pipe",
+    name: "Sasuke",
   },
   {
     id: 3,
-    name: "Cuqui",
+    name: "Sakura",
   },
 ];
 
-// Mediante el reducer vamos a modificar el estado
-const firstReducers = () => {
+// Mediante el reducer vamos a modificar el estado de lo que vamos a controlar
+const firstReducers = (state = initialState, action) => {
   return state;
 };

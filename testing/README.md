@@ -54,3 +54,7 @@ que una parte funcione bien por si sola
 # Renderizado de componentes
 
 Esto lo cubre `react testing library` con el método `render`
+
+# Renderizado de Hooks :
+
+para esto jest necesita ayuda de otra librería -> react testing library

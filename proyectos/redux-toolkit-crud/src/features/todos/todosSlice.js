@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { v4 as uuid } from "uuid";
 
 //MI PORCIÓN DE ESTADO
 // Muy importante, el estado inicial de la aplicacion
 
 const initialState = [
-  { id: 0, tarea: "Controlar REDUX", state: false },
-  { id: 1, tarea: "Hacer las compras", state: false },
-  { id: 2, tarea: "Encontrar Motivacion", state: true },
+  { id: uuid(), tarea: "Controlar REDUX", state: false },
+  { id: uuid(), tarea: "Hacer las compras", state: false },
+  { id: uuid(), tarea: "Encontrar Motivacion", state: true },
 ];
 
 export const todosSlice = createSlice({
@@ -20,8 +21,14 @@ export const todosSlice = createSlice({
       // console.log("action", action);
       state.push(action.payload);
     },
+    deleteTask: (state, action) => {
+      // recordemos que cada item tiene un id unico
+    },
+    completeTask: (state1, action) => {
+      // tarea completada
+    },
   },
 });
 
-export const { addTask } = todosSlice.actions;
+export const { addTask, deleteTask } = todosSlice.actions;
 export default todosSlice.reducer;

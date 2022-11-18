@@ -31,7 +31,8 @@ export const todosSlice = createSlice({
     completeTask: (state, action) => {
       // console.log("Completada");
       const taskCompleted = state.find((todo) => todo.id === action.payload);
-      console.log(state.indexOf(taskCompleted));
+      state[state.indexOf(taskCompleted)].state =
+        !state[state.indexOf(taskCompleted)].state;
     },
   },
 });

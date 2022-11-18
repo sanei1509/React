@@ -19,6 +19,7 @@ export const TasksList = () => {
   return (
     <div>
       <h2>Tus tareas</h2>
+      <h2>Total :{tareas.length}</h2>
       <button onClick={() => navigate("/create")}>Crear ➕</button>
       <ul>
         {tareas.map((tarea) => (

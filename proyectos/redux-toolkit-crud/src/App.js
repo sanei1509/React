@@ -4,14 +4,16 @@ import "./App.css";
 // USESELECTOR -> permite obtener datos del store
 import { TasksList } from "./components/TasksList";
 import { TaskForm } from "./components/TaskForm";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <h1>Gestor de tareas con redux (tkt)</h1>
-      <TaskForm />
-
-      <TasksList />
+      <Routes>
+        <Route path="/" element={<TasksList />} />
+        <Route path="/create" element={<TaskForm />} />
+      </Routes>
     </div>
   );
 }

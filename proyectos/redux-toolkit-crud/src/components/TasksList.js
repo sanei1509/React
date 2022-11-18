@@ -1,22 +1,25 @@
 import { TaskItem } from "./TaskItem";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { completeTask, deleteTask } from "../features/todos/todosSlice";
+import { useNavigate } from "react-router";
 
 export const TasksList = () => {
   const { tareas } = useSelector((state) => state);
-
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   // ACCIONES SOBRE LAS TAREAS
   const handleComplete = (id) => {
-    console.log("Tarea Completada");
-    console.log(id);
+    dispatch(completeTask(id));
   };
 
   const handleDelete = (id) => {
-    console.log(id);
+    dispatch(deleteTask(id));
   };
 
   return (
     <div>
       <h2>Tus tareas</h2>
+      <button onClick={() => navigate("/create")}>Crear ➕</button>
       <ul>
         {tareas.map((tarea) => (
           <TaskItem

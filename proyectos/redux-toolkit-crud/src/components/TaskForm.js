@@ -4,9 +4,11 @@ import { useDispatch } from "react-redux";
 import { addTask } from "../features/todos/todosSlice";
 import { v4 as uuid } from "uuid";
 
+import { useNavigate } from "react-router";
+
 export const TaskForm = () => {
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   //FORMIK
   const BaseForm = {
     tarea: "",
@@ -18,7 +20,7 @@ export const TaskForm = () => {
     values.id = uuid();
     values.state = false;
     dispatch(addTask(values));
-
+    navigate("/");
     resetForm();
   };
 

@@ -23,12 +23,18 @@ export const todosSlice = createSlice({
     },
     deleteTask: (state, action) => {
       // recordemos que cada item tiene un id unico
+      console.log("eliminando");
+      const tareaToDelete = state.find((tarea) => tarea.id === action.payload);
+
+      state.splice(state.indexOf(tareaToDelete), 1);
     },
-    completeTask: (state1, action) => {
-      // tarea completada
+    completeTask: (state, action) => {
+      // console.log("Completada");
+      const taskCompleted = state.find((todo) => todo.id === action.payload);
+      console.log(state.indexOf(taskCompleted));
     },
   },
 });
 
-export const { addTask, deleteTask } = todosSlice.actions;
+export const { addTask, deleteTask, completeTask } = todosSlice.actions;
 export default todosSlice.reducer;

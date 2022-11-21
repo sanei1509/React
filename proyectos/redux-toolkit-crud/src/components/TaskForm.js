@@ -5,8 +5,10 @@ import { addTask } from "../features/todos/todosSlice";
 import { v4 as uuid } from "uuid";
 
 import { useNavigate } from "react-router";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const TaskForm = () => {
+  const [persistTarea, setPersistTarea] = useLocalStorage("tarea", {});
   const dispatch = useDispatch();
   const navigate = useNavigate();
   //FORMIK
@@ -20,6 +22,7 @@ export const TaskForm = () => {
     values.id = uuid();
     values.state = false;
     dispatch(addTask(values));
+    setPersistTarea(values);
     navigate("/");
     resetForm();
   };
@@ -29,7 +32,7 @@ export const TaskForm = () => {
   return (
     <div>
       <h2>Agregar Tarea</h2>
-      <Formik initialValues={BaseForm} onSubmit={handleSubmit}>
+      <Formik initialValues={persistTarea} onSubmit={handleSubmit}>
         <Form>
           <Field name="tarea" type="text" />
           <ErrorMessage name="tarea" />
